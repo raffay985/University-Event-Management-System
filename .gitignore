@@ -1,0 +1,7 @@
+config/database.php
+sessions/
+university_event_system.sql
+*.zip
+test_connection.php
+session_test.php
+check_session.php

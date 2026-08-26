@@ -1,0 +1,1756 @@
+/* =========================================================
+   UNIVERSITY EVENT MANAGEMENT SYSTEM
+   COMPLETE BLUE / GREEN THEME
+   FOR ALL PAGES
+========================================================= */
+
+
+/* =========================================================
+   THEME VARIABLES
+========================================================= */
+
+:root {
+
+    --darkest: #0d3b45;
+
+    --dark: #124f59;
+
+    --dark2: #176b72;
+
+    --main: #168b86;
+
+    --main2: #209c95;
+
+    --medium: #38aaa2;
+
+    --light: #8fd4ce;
+
+    --lighter: #ccebe7;
+
+    --soft: #dff5f2;
+
+    --soft2: #f3fbfa;
+
+    --soft3: #eaf8f6;
+
+    --white: #ffffff;
+
+    --text: #163f46;
+
+    --muted: #52777b;
+
+    --border: #a8dcd7;
+
+    --border-light: #cce7e4;
+
+    --shadow: rgba(18, 79, 89, 0.17);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 35px 20px;
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5fcfc,
+            #d9f0ed
+        ) !important;
+
+    color: var(--text) !important;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+h1 {
+
+    color: var(--darkest) !important;
+
+    font-size: 32px;
+
+    margin:
+        10px
+        0
+        12px;
+}
+
+h2 {
+
+    color: var(--dark) !important;
+
+    margin:
+        25px
+        0
+        18px;
+}
+
+h3 {
+
+    color: var(--dark2) !important;
+}
+
+h4,
+h5,
+h6 {
+
+    color: var(--dark) !important;
+}
+
+p {
+
+    color: var(--text) !important;
+
+    line-height: 1.6;
+}
+
+strong {
+
+    color: var(--dark) !important;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+
+    color: var(--main) !important;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        0.2s ease;
+}
+
+a:hover {
+
+    color: var(--darkest) !important;
+}
+
+
+/* =========================================================
+   MAIN DASHBOARD LISTS
+========================================================= */
+
+body > ul {
+
+    list-style: none;
+
+    margin:
+        30px
+        auto;
+
+    padding: 0;
+
+    width: 90%;
+
+    max-width: 430px;
+}
+
+body > ul li {
+
+    margin:
+        12px
+        0;
+}
+
+body > ul li a {
+
+    display: block;
+
+    padding:
+        13px
+        20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color: white !important;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 4px 10px
+        var(--shadow);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+body > ul li a:hover {
+
+    color: white !important;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 6px 14px
+        rgba(18, 79, 89, 0.24);
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+form {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin:
+        25px
+        auto;
+
+    padding: 25px;
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 16px
+        var(--shadow) !important;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color:
+        var(--dark) !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding:
+        11px
+        12px;
+
+    border:
+        1px solid
+        var(--light) !important;
+
+    border-radius: 7px;
+
+    background:
+        white !important;
+
+    color:
+        var(--text) !important;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color:
+        var(--main) !important;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(22, 139, 134, 0.14) !important;
+}
+
+textarea {
+
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   RADIO / CHECKBOX
+========================================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+
+    width: auto;
+
+    accent-color:
+        var(--main) !important;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button,
+input[type="submit"] {
+
+    border: none;
+
+    padding:
+        11px
+        24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(18, 79, 89, 0.25);
+}
+
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+table {
+
+    width: 95%;
+
+    max-width: 1200px;
+
+    margin:
+        30px
+        auto;
+
+    border-collapse: collapse;
+
+    background:
+        var(--soft2) !important;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px
+        var(--shadow) !important;
+}
+
+th {
+
+    padding:
+        13px
+        10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+td {
+
+    padding:
+        12px
+        10px;
+
+    border-bottom:
+        1px solid
+        var(--border-light) !important;
+
+    color:
+        var(--text) !important;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+tr:nth-child(even) {
+
+    background:
+        var(--soft) !important;
+}
+
+tr:hover {
+
+    background:
+        #ccece8 !important;
+}
+
+
+/* =========================================================
+   TABLE ACTION BUTTONS
+========================================================= */
+
+td a {
+
+    display: inline-block;
+
+    margin: 3px;
+
+    padding:
+        6px
+        10px;
+
+    background:
+        var(--main) !important;
+
+    color:
+        white !important;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+td a:hover {
+
+    background:
+        var(--dark) !important;
+
+    color:
+        white !important;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.success {
+
+    width: fit-content;
+
+    max-width: 90%;
+
+    margin:
+        20px
+        auto;
+
+    padding:
+        11px
+        18px;
+
+    background:
+        #d9f4ec !important;
+
+    border:
+        1px solid
+        #6abca7 !important;
+
+    border-radius: 7px;
+
+    color:
+        #175c4c !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.error,
+.login-error {
+
+    width: 100%;
+
+    margin:
+        15px
+        auto;
+
+    padding:
+        11px
+        14px;
+
+    background:
+        #ffe6e6 !important;
+
+    border:
+        1px solid
+        #e0a0a0 !important;
+
+    border-radius: 7px;
+
+    color:
+        #8a2727 !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOGIN PAGE
+========================================================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #092f38,
+            #176b72,
+            #29a69b
+        ) !important;
+}
+
+.login-wrapper {
+
+    width: 100%;
+
+    max-width: 430px;
+}
+
+.login-card {
+
+    width: 100%;
+
+    padding:
+        38px
+        35px;
+
+    background:
+        rgba(
+            244,
+            253,
+            252,
+            0.98
+        ) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            7,
+            56,
+            62,
+            0.32
+        ) !important;
+
+    text-align: center;
+}
+
+.login-logo {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin:
+        0
+        auto
+        18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--medium),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 6px 15px
+        rgba(18, 79, 89, 0.30);
+}
+
+.login-title {
+
+    margin:
+        0
+        0
+        10px;
+
+    color:
+        var(--darkest) !important;
+
+    font-size: 27px;
+
+    line-height: 1.25;
+}
+
+.login-subtitle {
+
+    margin-bottom: 25px;
+
+    color:
+        var(--muted) !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.login-form {
+
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    background:
+        transparent !important;
+
+    border: none !important;
+
+    box-shadow:
+        none !important;
+
+    text-align: left;
+}
+
+.login-form .form-group {
+
+    margin-bottom: 18px;
+}
+
+.login-form label {
+
+    color:
+        var(--dark) !important;
+}
+
+.login-button {
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 13px;
+}
+
+.login-footer {
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid
+        var(--border) !important;
+
+    text-align: center;
+}
+
+.login-footer p {
+
+    color:
+        var(--dark2) !important;
+}
+
+.login-footer span {
+
+    color:
+        var(--muted) !important;
+}
+
+
+/* =========================================================
+   ADMIN DASHBOARD
+========================================================= */
+
+.admin-dashboard-page {
+
+    min-height: 100vh;
+
+    padding:
+        35px
+        25px;
+}
+
+.admin-welcome {
+
+    color:
+        var(--text) !important;
+}
+
+.admin-dashboard-layout {
+
+    width: 90%;
+
+    max-width: 950px;
+
+    margin:
+        20px
+        auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        245px;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.admin-main-menu {
+
+    padding: 25px;
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 5px 16px
+        var(--shadow) !important;
+}
+
+.admin-main-menu h2 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.admin-menu-links {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.admin-menu-links a {
+
+    display: block;
+
+    padding:
+        12px
+        18px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    font-weight: 600;
+}
+
+.admin-menu-links a:hover {
+
+    color:
+        white !important;
+}
+
+
+/* =========================================================
+   ADMIN STATISTICS
+========================================================= */
+
+.admin-stats-box {
+
+    width: 100%;
+
+    padding: 15px;
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px
+        var(--shadow) !important;
+
+    text-align: left;
+}
+
+.admin-stats-box h3 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.small-stat {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        8px
+        3px;
+
+    border-bottom:
+        1px solid
+        var(--border) !important;
+}
+
+.small-stat span {
+
+    color:
+        var(--text) !important;
+}
+
+.small-stat strong {
+
+    min-width: 34px;
+
+    padding:
+        4px
+        7px;
+
+    background:
+        var(--main) !important;
+
+    color:
+        white !important;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   MINI CHART
+========================================================= */
+
+.mini-chart {
+
+    border-top:
+        1px solid
+        var(--border) !important;
+}
+
+.mini-chart-title {
+
+    color:
+        var(--dark) !important;
+}
+
+.chart-label {
+
+    color:
+        var(--text) !important;
+}
+
+.chart-track {
+
+    background:
+        var(--lighter) !important;
+}
+
+.chart-bar {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--medium),
+            var(--dark)
+        ) !important;
+}
+
+
+/* =========================================================
+   GENERIC CARDS
+========================================================= */
+
+.card {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin:
+        20px
+        auto;
+
+    padding: 22px;
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 14px
+        var(--shadow) !important;
+
+    color:
+        var(--text) !important;
+}
+
+
+/* =========================================================
+   EVENT DETAILS PAGE
+========================================================= */
+
+.event-details-page {
+
+    color:
+        var(--text) !important;
+}
+
+.event-details-wrapper {
+
+    color:
+        var(--text) !important;
+}
+
+.event-information {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 5px 16px
+        var(--shadow) !important;
+
+    color:
+        var(--text) !important;
+}
+
+.event-information h2 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.event-information p {
+
+    color:
+        var(--text) !important;
+}
+
+.event-information strong {
+
+    color:
+        var(--dark) !important;
+}
+
+
+/* =========================================================
+   QR BOX
+========================================================= */
+
+.event-qr-box {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 5px 16px
+        var(--shadow) !important;
+}
+
+.event-qr-box h3 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.event-qr-box p {
+
+    color:
+        var(--muted) !important;
+}
+
+.qr-label {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+
+/* =========================================================
+   EVENT ACTION BUTTONS
+========================================================= */
+
+.event-actions a {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    box-shadow:
+        0 3px 9px
+        var(--shadow);
+}
+
+.event-actions a:hover {
+
+    color:
+        white !important;
+}
+
+
+/* =========================================================
+   PUBLIC QR EVENT PAGE
+========================================================= */
+
+.public-event-page {
+
+    color:
+        var(--text) !important;
+}
+
+.public-event-card {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 6px 20px
+        var(--shadow) !important;
+
+    color:
+        var(--text) !important;
+}
+
+.public-event-card h2 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.public-event-badge {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+.public-event-item {
+
+    border-bottom:
+        1px solid
+        var(--border-light) !important;
+}
+
+.public-event-item strong {
+
+    color:
+        var(--dark) !important;
+}
+
+.public-event-item span {
+
+    color:
+        var(--text) !important;
+}
+
+.public-event-actions a {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+
+    box-shadow:
+        0 4px 10px
+        var(--shadow) !important;
+}
+
+.public-event-actions a:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--medium),
+            var(--darkest)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+.public-note {
+
+    color:
+        var(--muted) !important;
+}
+
+
+/* =========================================================
+   ATTENDANCE PAGE
+========================================================= */
+
+.attendance-page {
+
+    color:
+        var(--text) !important;
+}
+
+.attendance-event-info {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 4px 12px
+        var(--shadow) !important;
+}
+
+.attendance-event-info h2 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.attendance-event-info p {
+
+    color:
+        var(--text) !important;
+}
+
+.attendance-event-info strong {
+
+    color:
+        var(--dark) !important;
+}
+
+.attendance-back {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+.attendance-back:hover {
+
+    background:
+        var(--darkest) !important;
+
+    color:
+        white !important;
+}
+
+form.attendance-form {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 5px 16px
+        var(--shadow) !important;
+}
+
+.attendance-table-wrapper {
+
+    border-color:
+        var(--border) !important;
+}
+
+.attendance-table {
+
+    background:
+        var(--soft2) !important;
+}
+
+.attendance-table th {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+.attendance-table td {
+
+    color:
+        var(--text) !important;
+
+    border-color:
+        var(--border-light) !important;
+}
+
+.attendance-table tr:nth-child(even) {
+
+    background:
+        var(--soft) !important;
+}
+
+.attendance-table input[type="radio"] {
+
+    accent-color:
+        var(--main) !important;
+}
+
+.attendance-empty {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    color:
+        var(--text) !important;
+}
+
+
+/* =========================================================
+   REPORT PAGES
+========================================================= */
+
+.report-summary,
+.student-report-summary {
+
+    color:
+        var(--text) !important;
+}
+
+.report-card,
+.student-report-card {
+
+    background:
+        var(--soft2) !important;
+
+    border:
+        1px solid
+        var(--border) !important;
+
+    box-shadow:
+        0 3px 10px
+        var(--shadow) !important;
+}
+
+.report-card span,
+.student-report-card span {
+
+    color:
+        var(--muted) !important;
+}
+
+.report-card strong,
+.student-report-card strong {
+
+    color:
+        var(--darkest) !important;
+}
+
+.report-section {
+
+    color:
+        var(--text) !important;
+}
+
+.report-section h2 {
+
+    color:
+        var(--dark) !important;
+}
+
+
+/* =========================================================
+   CERTIFICATE PAGE
+========================================================= */
+
+.certificate-container {
+
+    background:
+        var(--soft2) !important;
+
+    border-color:
+        var(--main) !important;
+
+    box-shadow:
+        0 8px 25px
+        var(--shadow) !important;
+
+    color:
+        var(--text) !important;
+}
+
+.certificate-container h1 {
+
+    color:
+        var(--darkest) !important;
+}
+
+.certificate-university {
+
+    color:
+        var(--main) !important;
+}
+
+.certificate-text {
+
+    color:
+        var(--text) !important;
+}
+
+.certificate-name {
+
+    color:
+        var(--darkest) !important;
+}
+
+.certificate-event {
+
+    color:
+        var(--main) !important;
+}
+
+.certificate-info {
+
+    color:
+        var(--text) !important;
+}
+
+.certificate-actions a {
+
+    color:
+        var(--main) !important;
+}
+
+
+/* =========================================================
+   NOTIFICATION PAGE
+========================================================= */
+
+.notifications,
+.notification-box,
+.notification-card {
+
+    background:
+        var(--soft2) !important;
+
+    border-color:
+        var(--border) !important;
+
+    color:
+        var(--text) !important;
+}
+
+
+/* =========================================================
+   REMOVE OLD BROWN COLORS FROM COMMON ELEMENTS
+========================================================= */
+
+[style*="#4e342e"],
+[style*="#6d4c41"],
+[style*="#795548"],
+[style*="#5d4037"],
+[style*="#3e2723"] {
+
+    color:
+        var(--text);
+}
+
+
+/* =========================================================
+   FORCE COMMON BOXES TO BLUE-GREEN
+========================================================= */
+
+.event-information,
+.event-qr-box,
+.public-event-card,
+.attendance-event-info,
+.attendance-empty,
+.admin-main-menu,
+.admin-stats-box,
+.report-card,
+.student-report-card,
+.card {
+
+    background:
+        var(--soft2) !important;
+
+    border-color:
+        var(--border) !important;
+}
+
+
+/* =========================================================
+   FORCE COMMON DARK BUTTON AREAS
+========================================================= */
+
+.qr-label,
+.public-event-badge,
+.public-event-actions a,
+.event-actions a,
+.attendance-back,
+.admin-menu-links a {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--main),
+            var(--dark)
+        ) !important;
+
+    color:
+        white !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLES
+========================================================= */
+
+@media (max-width: 900px) {
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding:
+            25px
+            12px;
+    }
+
+
+    h1 {
+
+        font-size:
+            26px;
+    }
+
+
+    .admin-dashboard-layout {
+
+        width:
+            96%;
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .admin-stats-box {
+
+        max-width:
+            350px;
+
+        margin:
+            auto;
+    }
+
+
+    form {
+
+        width:
+            96%;
+
+        padding:
+            20px;
+    }
+
+
+    .login-page {
+
+        padding:
+            15px;
+    }
+
+
+    .login-card {
+
+        padding:
+            30px
+            22px;
+    }
+
+
+    .login-title {
+
+        font-size:
+            23px;
+    }
+
+
+    table {
+
+        width:
+            100%;
+    }
+
+
+    th,
+    td {
+
+        padding:
+            10px
+            8px;
+
+        font-size:
+            13px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 450px) {
+
+    h1 {
+
+        font-size:
+            23px;
+    }
+
+
+    h2 {
+
+        font-size:
+            19px;
+    }
+
+
+    .login-logo {
+
+        width:
+            68px;
+
+        height:
+            68px;
+
+        font-size:
+            18px;
+    }
+
+
+    .admin-main-menu {
+
+        padding:
+            18px;
+    }
+
+
+    .admin-stats-box {
+
+        padding:
+            13px;
+    }
+
+}
