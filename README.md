@@ -444,13 +444,11 @@ This project was developed as a **Web Engineering university project** to demons
 
 ---
 
-# 👨‍💻 Project Team
+# 👨‍💻 Author
 
-| Student ID | Student Name |
-|---|---|
-| 2312165 | Muhammad Raffay Sajjad |
-| 2312170 | Muhammad Talha Khan |
-| 2312160 | Muhammad Annan |
+**Muhammad Raffay Sajjad**
+
+GitHub: https://github.com/raffay985
 
 ---
 
